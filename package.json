@@ -1,7 +1,20 @@
 {
   "name": "@crowded/js-sdk",
+  "repository": "github:crowded/js-sdk",
+  "description": "Connect your website with a Crowded Community",
+  "author": {
+    "name": "Crowded",
+    "email": "support@crowded.co",
+    "url": "https://crowded.co"
+  },
+  "keywords": [
+    "Crowded",
+    "Communities",
+    "Embed"
+  ],
   "main": "/lib/index",
   "types": "/lib/index",
+  "license": "MIT",
   "version": "0.0.01",
   "scripts": {
     "type-check": "tsc --noEmit",
@@ -11,7 +24,7 @@
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
     "bundle": "webpack"
   },
-  "dependencies": {
+  "devDependencies": {
     "@babel/cli": "^7.5.0",
     "@babel/core": "^7.5.4",
     "@babel/plugin-proposal-class-properties": "^7.5.0",
