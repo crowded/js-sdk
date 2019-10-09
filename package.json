@@ -15,7 +15,7 @@
   "main": "/lib/index",
   "types": "/lib/index",
   "license": "MIT",
-  "version": "0.0.01",
+  "version": "0.0.02",
   "scripts": {
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",

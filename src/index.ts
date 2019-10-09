@@ -24,12 +24,12 @@ class Embed {
             throw new TypeError(
                 "Parameter of new Crowded.Embed(...) must be Iframe DOM Element"
             );
-
         this.frame = iframe;
 
-        this.frame.onload = () => this.Call("Connect");
-
         this.on("transition", (state: any) => (this.state = state));
+        this.on("initialized", () => {
+            this.Call("Connect")
+        });
         this.CapturePostMessages();
 
         this.to("");
@@ -42,7 +42,7 @@ class Embed {
             this.state.state
                 ? this.Call("Navigate", path)
                 : (this.frame.src =
-                    Crowded.config.domain + path + "?iframe=true");
+                    Crowded.config.domain + path);
     }
 
     on(event: string, callback: Function) {
