@@ -1,4 +1,6 @@
 # Crowded JS SDK
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcrowded%2Fjs-sdk.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcrowded%2Fjs-sdk?ref=badge_shield)
+
 
 Simple API to set up a connection with Crowded and load a community inside an iframe.
 
@@ -118,3 +120,7 @@ Example:
 ```js
 embed.on("debug", message => console.log(message));
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcrowded%2Fjs-sdk.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcrowded%2Fjs-sdk?ref=badge_large)
